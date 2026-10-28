@@ -441,3 +441,42 @@ func decodeHeredoc(t *testing.T, script, path string) string {
 	}
 	return string(data)
 }
+
+func TestAzureDevOpsSendsHTTPSCloneURLsToTheBroker(t *testing.T) {
+	embedded, err := cap.Embedded()
+	if err != nil {
+		t.Fatal(err)
+	}
+	plan, err := Render([]cap.Cap{embedded["azure-devops"]}, data)
+	if err != nil {
+		t.Fatalf("Render: %v", err)
+	}
+	if len(plan.Blocks) != 1 || plan.Blocks[0].Path != "/etc/gitconfig" {
+		t.Fatalf("want one /etc/gitconfig block, got %+v", plan.Blocks)
+	}
+	gitBin, err := exec.LookPath("git")
+	if err != nil {
+		t.Skip("git not installed")
+	}
+	config := filepath.Join(t.TempDir(), "gitconfig")
+	if err := os.WriteFile(config, []byte(plan.Blocks[0].Content), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	// git ls-remote --get-url applies insteadOf without contacting a remote.
+	cases := map[string]string{
+		"https://dev.azure.com/itlabsde/Konexi/_git/alberta.mobile": "http://127.0.0.1:7777/azure-devops/itlabsde/Konexi/_git/alberta.mobile",
+		// SSH stays SSH: it goes out directly with the ssh-agent grant.
+		"git@ssh.dev.azure.com:v3/itlabsde/Konexi/alberta.mobile": "git@ssh.dev.azure.com:v3/itlabsde/Konexi/alberta.mobile",
+	}
+	for url, want := range cases {
+		cmd := exec.Command(gitBin, "ls-remote", "--get-url", url)
+		cmd.Env = append(os.Environ(), "GIT_CONFIG_GLOBAL="+config, "GIT_CONFIG_NOSYSTEM=1")
+		out, err := cmd.Output()
+		if err != nil {
+			t.Fatalf("git ls-remote --get-url %s: %v", url, err)
+		}
+		if got := strings.TrimSpace(string(out)); got != want {
+			t.Errorf("%s\n rewrites to %s\n want       %s", url, got, want)
+		}
+	}
+}
