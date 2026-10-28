@@ -108,7 +108,7 @@ func TestEmbeddedDefaultsAreValid(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Embedded: %v", err)
 	}
-	for _, name := range []string{"claude", "github"} {
+	for _, name := range []string{"azure-devops", "claude", "github"} {
 		c, ok := set[name]
 		if !ok {
 			t.Errorf("missing embedded cap %q", name)
@@ -159,6 +159,29 @@ func TestEmbeddedDefaultsAreValid(t *testing.T) {
 	}
 	if got := yamlLeaves(t, hosts); !maps.Equal(got, want) {
 		t.Errorf("hosts.yml block has the wrong shape:\n got %v\nwant %v\n%s", got, want, hosts)
+	}
+}
+
+func TestEmbeddedAzureDevOpsSendsThePATAsBasicAuth(t *testing.T) {
+	set, err := Embedded()
+	if err != nil {
+		t.Fatalf("Embedded: %v", err)
+	}
+	ado, ok := set["azure-devops"]
+	if !ok || ado.Proxy == nil {
+		t.Fatalf("azure-devops must be an embedded proxy capability, got %+v", ado)
+	}
+	if ado.Proxy.Upstream != "https://dev.azure.com" {
+		t.Errorf("upstream = %q", ado.Proxy.Upstream)
+	}
+	// Azure DevOps takes a PAT only as Basic credentials with an empty user.
+	auth, err := Render(ado.Proxy.Headers["Authorization"], lintData,
+		func(string) (string, error) { return "tok", nil })
+	if err != nil || auth != "Basic OnRvaw==" {
+		t.Errorf("azure-devops Authorization = %q, %v", auth, err)
+	}
+	if refs := ado.Proxy.SecretRefs(); strings.Join(refs, ",") != "keychain:skiff/azure-devops-token" {
+		t.Errorf("azure-devops must use the azure-devops-token secret, got %v", refs)
 	}
 }
 

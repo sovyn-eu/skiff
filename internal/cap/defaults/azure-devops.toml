@@ -1,0 +1,50 @@
+# Azure DevOps (dev.azure.com) through the broker, for git over HTTPS and the
+# REST API:
+#   skiff grant <vm> azure-devops
+#
+# Store a personal access token once:
+#   skiff secret set azure-devops-token
+# The token is the only limit on what the VM can reach: the broker checks
+# that azure-devops is granted, not which project a request names. A PAT can
+# be limited to organizations and permission scopes (Code read/write for git),
+# but not to projects or repositories; it reaches every project its user can.
+# To keep an agent to one project, create the PAT for an identity that is
+# only a member of that project. The token itself never enters the guest.
+#
+# git: a managed section in the guest's /etc/gitconfig rewrites
+# https://dev.azure.com/ to the broker, so plain
+# `git clone https://dev.azure.com/org/project/_git/repo` and `git push` just
+# work. The REST API is reachable at the broker under
+# /azure-devops/org/project/_apis/... (see `skiff cap show azure-devops --render`).
+#
+# Clone URLs with a user name (https://org@dev.azure.com/..., what the Clone
+# button shows) need the organization in the rule, because insteadOf only
+# matches literal prefixes. Either drop the "org@", or copy this file and add
+# a line per organization below the existing insteadOf (write the copy
+# elsewhere first: skiff would read a half-written file in its caps directory):
+#   skiff cap show azure-devops > azure-devops.toml
+#   mv azure-devops.toml ~/.skiff/caps/
+#   	insteadOf = https://myorg@dev.azure.com/
+# The copy replaces this file, including later changes to it.
+#
+# Not rewritten: ssh.dev.azure.com (use the ssh-agent grant, SSH goes out
+# directly) and the legacy org.visualstudio.com hosts. Paths with
+# percent-encoding are refused, so a project name with spaces only works
+# through its project ID.
+
+name = "azure-devops"
+description = "git over HTTPS and the REST API of dev.azure.com, limited by the PAT"
+
+[proxy]
+upstream = "https://dev.azure.com"
+[proxy.headers]
+# Azure DevOps accepts a PAT only as Basic credentials; the user name is
+# ignored and conventionally left empty.
+Authorization = "Basic {{ secret \"keychain:skiff/azure-devops-token\" | basicauth \"\" }}"
+
+[[guest.blocks]]
+path = "/etc/gitconfig"
+content = """
+[url "{{ .BrokerURL }}/azure-devops/"]
+	insteadOf = https://dev.azure.com/
+"""

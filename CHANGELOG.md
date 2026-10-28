@@ -7,6 +7,14 @@ and the project uses [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- **Azure DevOps capability.** The embedded `azure-devops` capability serves
+  git over HTTPS and the REST API of `dev.azure.com` through the broker with a
+  personal access token from `skiff secret set azure-devops-token`, sent as
+  Basic credentials. `https://dev.azure.com/` clone URLs are rewritten in the
+  guest's `/etc/gitconfig`; SSH URLs keep working with the `ssh-agent` grant.
+
 ### Fixed
 
 - **The login banner is back.** The guest image replaces Ubuntu's motd (help

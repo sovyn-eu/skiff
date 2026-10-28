@@ -188,7 +188,7 @@ specific to Claude Code, GitHub or any other tool is a **capability file**:
 | `exec`    | pipes the request through an external program (`skiff-cap-<name>`)        |
 
 ```sh
-skiff cap ls                           # embedded: claude, github; yours in ~/.skiff/caps
+skiff cap ls                           # embedded: azure-devops, claude, github; yours in ~/.skiff/caps
 skiff cap show claude                  # the TOML file
 skiff cap show github --render --vm agent1   # what the guest receives
 skiff cap init codex                   # commented skeleton, then: skiff cap lint codex
@@ -215,6 +215,18 @@ processes without a restart. Paths with percent-encoding are refused, and
 downloads that GitHub redirects to other hosts (`gh release download`) do not
 work through the broker. Route hosts must be public DNS names, never an IP or
 `localhost`, so no capability can catch the requests of another.
+
+The embedded `azure-devops` capability does the same for git over HTTPS to
+`dev.azure.com` and its REST API: `skiff secret set azure-devops-token`, then
+`skiff grant agent1 azure-devops`. Azure DevOps takes the PAT only as Basic
+credentials, which the broker sends. A PAT can be limited to organizations but
+not to projects, so to keep an agent to one project, issue the PAT for an
+identity that is only a member of that project. Clone URLs of the form
+`https://org@dev.azure.com/…` need the organization in the gitconfig rule:
+drop the `org@`, or copy the capability (`skiff cap show azure-devops >
+azure-devops.toml`, then move it to `~/.skiff/caps/`) and add
+`insteadOf = https://<org>@dev.azure.com/` for each organization. For
+`git@ssh.dev.azure.com:…` grant `ssh-agent` instead.
 
 The embedded `claude` capability points `ANTHROPIC_BASE_URL` at the broker and
 sets `CLAUDE_CODE_OAUTH_TOKEN` to the placeholder, so the unmodified Claude Code
