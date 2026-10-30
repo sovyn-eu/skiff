@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // runIn executes several commands against one state directory.

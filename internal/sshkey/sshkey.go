@@ -9,8 +9,8 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // Ensure generates the ed25519 key pair in paths.Home unless it exists.

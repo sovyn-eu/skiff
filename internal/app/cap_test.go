@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/broker"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/broker"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 func newCapApp(t *testing.T) (*App, *strings.Builder, *runner.Fake) {

@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // newTestApp wires an App on an in-memory backend and a fake runner for the

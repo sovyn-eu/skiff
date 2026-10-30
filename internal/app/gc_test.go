@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 var gcNow = time.Date(2026, 10, 7, 12, 0, 0, 0, time.UTC)

@@ -1,8 +1,8 @@
 # skiff – a fresh Linux VM on your Mac in half a second
 
-[![CI](https://github.com/itlabs-gmbh/skiff/actions/workflows/ci.yml/badge.svg)](https://github.com/itlabs-gmbh/skiff/actions/workflows/ci.yml)
+[![CI](https://github.com/sovyn-eu/skiff/actions/workflows/ci.yml/badge.svg)](https://github.com/sovyn-eu/skiff/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Go Reference](https://pkg.go.dev/badge/github.com/itlabs-gmbh/skiff.svg)](https://pkg.go.dev/github.com/itlabs-gmbh/skiff)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sovyn-eu/skiff.svg)](https://pkg.go.dev/github.com/sovyn-eu/skiff)
 
 `skiff` gives you throwaway Linux VMs on Apple Silicon, one per task or coding
 agent: `skiff new dev` boots an Ubuntu 24.04 VM with its own kernel, disk, IP
@@ -35,7 +35,7 @@ Check with `skiff doctor`.
 ## Install
 
 ```sh
-go install github.com/itlabs-gmbh/skiff/cmd/skiff@latest
+go install github.com/sovyn-eu/skiff/cmd/skiff@latest
 skiff prepare           # one-time setup, about a minute
 ```
 

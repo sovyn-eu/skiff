@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"sort"
 
-	"github.com/itlabs-gmbh/skiff/internal/secret"
+	"github.com/sovyn-eu/skiff/internal/secret"
 )
 
 var secretNameRe = regexp.MustCompile(`^[a-z][a-z0-9-]*$`)

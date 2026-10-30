@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // KeychainService is the macOS Keychain service name skiff stores secrets under.

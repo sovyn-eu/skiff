@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // probeTimeout bounds each system query so a hung tool cannot stall skiff.

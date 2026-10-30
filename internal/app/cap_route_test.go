@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/cap"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 const routedBody = `name = "forge"

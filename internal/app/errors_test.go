@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 func TestLifecycleSurfacesBackendErrors(t *testing.T) {

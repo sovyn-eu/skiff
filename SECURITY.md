@@ -7,7 +7,7 @@ Please **do not** report security issues through public GitHub issues.
 Use one of these private channels:
 
 1. **GitHub private vulnerability reporting** (preferred):
-   https://github.com/itlabs-gmbh/skiff/security/advisories/new
+   https://github.com/sovyn-eu/skiff/security/advisories/new
 2. **E-mail:** info@it-labs.de with the subject `[skiff security]`
 
 Include what you found, how to reproduce it, the skiff version

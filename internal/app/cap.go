@@ -13,10 +13,10 @@ import (
 	"text/tabwriter"
 	"unicode"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
-	"github.com/itlabs-gmbh/skiff/internal/guest"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/guest"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // maxCapDownload bounds `skiff cap add` downloads.

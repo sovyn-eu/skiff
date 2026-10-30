@@ -1,4 +1,4 @@
-module github.com/itlabs-gmbh/skiff
+module github.com/sovyn-eu/skiff
 
 go 1.26.5
 

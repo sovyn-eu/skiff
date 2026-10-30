@@ -5,7 +5,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/config"
 )
 
 // The broker relay gives clients that only speak HTTP over a Unix socket

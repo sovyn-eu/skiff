@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // upperServer answers every connection with the upper-cased line it reads.

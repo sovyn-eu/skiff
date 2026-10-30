@@ -8,7 +8,7 @@
 #   cp examples/caps/gh-api.toml ~/.skiff/caps/
 #   skiff grant agent1 gh-api
 #   # in the guest:
-#   curl -s http://127.0.0.1:7777/gh-api/repos/itlabs-gmbh/skiff/pulls
+#   curl -s http://127.0.0.1:7777/gh-api/repos/sovyn-eu/skiff/pulls
 #
 # Do not hand the guest `gh auth token` or any other credential from an exec
 # program: whatever the program prints lands in the VM.

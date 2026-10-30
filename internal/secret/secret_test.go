@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 func newResolver(fake *runner.Fake) *Resolver {

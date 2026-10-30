@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // cleanupTimeout bounds the best-effort removal of a VM whose creation was

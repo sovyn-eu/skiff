@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // record is what skiff knows about a machine beyond what `container`

@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 const (

@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // runSplit runs the CLI with separate stdout and stderr buffers so tests can

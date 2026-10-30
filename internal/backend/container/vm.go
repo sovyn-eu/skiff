@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // machine is one entry of `container machine ls --format json`.

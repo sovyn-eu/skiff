@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 var data = cap.TemplateData{VM: "agent1", BrokerURL: "http://127.0.0.1:7777", PseudoToken: "tok"}

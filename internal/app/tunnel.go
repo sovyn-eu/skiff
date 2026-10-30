@@ -8,11 +8,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/broker"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
-	"github.com/itlabs-gmbh/skiff/internal/secret"
+	"github.com/sovyn-eu/skiff/internal/broker"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/secret"
 )
 
 // Tunnel makes this process the owner of a VM's broker and returns the

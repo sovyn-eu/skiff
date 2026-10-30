@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 // State is what the guest reported before an apply: the previous manifest and

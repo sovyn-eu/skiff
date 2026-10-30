@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/app"
 )
 
 // annotationStdoutIsData marks commands whose stdout carries a byte stream,

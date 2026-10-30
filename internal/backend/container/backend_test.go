@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend"
-	"github.com/itlabs-gmbh/skiff/internal/host"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend"
+	"github.com/sovyn-eu/skiff/internal/host"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 func TestDoctorReportsVersionAndService(t *testing.T) {

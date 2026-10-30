@@ -9,10 +9,10 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/shquote"
-	"github.com/itlabs-gmbh/skiff/internal/sshcfg"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/shquote"
+	"github.com/sovyn-eu/skiff/internal/sshcfg"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // sshConnectionFailed is ssh's exit status for transport-level failures, as

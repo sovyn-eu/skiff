@@ -4,7 +4,7 @@ package main
 import (
 	"os"
 
-	"github.com/itlabs-gmbh/skiff/internal/cli"
+	"github.com/sovyn-eu/skiff/internal/cli"
 )
 
 func main() {

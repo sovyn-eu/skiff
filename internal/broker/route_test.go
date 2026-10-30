@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 // routedCap is a github-like cap: git under /forge/, the API by Host.

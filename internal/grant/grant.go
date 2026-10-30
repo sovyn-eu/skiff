@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 // SSHAgent is a built-in grant with no cap file: it forwards the Mac's SSH

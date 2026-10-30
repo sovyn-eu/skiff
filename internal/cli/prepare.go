@@ -3,7 +3,7 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/app"
 )
 
 func newPrepareCmd(get func() *app.App) *cobra.Command {
