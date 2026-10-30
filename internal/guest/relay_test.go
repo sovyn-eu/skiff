@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 func TestRelayInstalledWhileCapsAreGranted(t *testing.T) {

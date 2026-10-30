@@ -17,7 +17,7 @@ You need an Apple Silicon Mac with macOS 26+ to run VMs.
 Unit tests, `go vet` and `shellcheck` also run on Linux.
 
 ```sh
-git clone https://github.com/itlabs-gmbh/skiff.git
+git clone https://github.com/sovyn-eu/skiff.git
 cd skiff
 make build    # -> bin/skiff
 make test     # unit tests with -race

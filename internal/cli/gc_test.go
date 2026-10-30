@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // ownedBackend has one VM made by hand and one owned VM created long ago.

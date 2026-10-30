@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // dialAttempt bounds one connection attempt while a machine boots; a SYN to

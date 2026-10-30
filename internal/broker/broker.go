@@ -17,8 +17,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/grant"
 )
 
 // SecretResolver resolves cap secret references.

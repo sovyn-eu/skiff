@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend"
-	"github.com/itlabs-gmbh/skiff/internal/shquote"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend"
+	"github.com/sovyn-eu/skiff/internal/shquote"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // SSHProxyCommand implements backend.Backend: ssh runs skiff itself, which

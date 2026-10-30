@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
-	"github.com/itlabs-gmbh/skiff/internal/guest"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/guest"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 func (a *App) grantStore() grant.Store {

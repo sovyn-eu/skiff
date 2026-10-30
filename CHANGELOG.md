@@ -7,6 +7,14 @@ and the project uses [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- **skiff moved to `sovyn-eu/skiff`.** The repository, the module path
+  (`github.com/sovyn-eu/skiff`) and the website
+  (`sovyn-eu.github.io/skiff`) follow. Install with
+  `go install github.com/sovyn-eu/skiff/cmd/skiff@latest`; the old
+  `itlabs-gmbh` path gets no new versions. Old GitHub links redirect.
+
 ### Fixed
 
 - **The login banner is back.** The guest image replaces Ubuntu's motd (help
@@ -202,6 +210,6 @@ First public release.
 - The guest CRNG is reseeded from the Lima VM's `/dev/urandom` after every
   snapshot restore so clones diverge immediately.
 
-[Unreleased]: https://github.com/itlabs-gmbh/skiff/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/itlabs-gmbh/skiff/compare/v0.0.1...v0.1.0
-[0.0.1]: https://github.com/itlabs-gmbh/skiff/releases/tag/v0.0.1
+[Unreleased]: https://github.com/sovyn-eu/skiff/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/sovyn-eu/skiff/compare/v0.0.1...v0.1.0
+[0.0.1]: https://github.com/sovyn-eu/skiff/releases/tag/v0.0.1

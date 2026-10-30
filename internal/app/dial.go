@@ -7,10 +7,10 @@ import (
 	"io"
 	"net"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/sshcfg"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/sshcfg"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // Dial is the body of `skiff _dial`, the ssh ProxyCommand of backends whose

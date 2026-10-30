@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 func TestGatherUsesRunnerAndLookPath(t *testing.T) {

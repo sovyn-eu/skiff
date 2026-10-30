@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/sshcfg"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/sshcfg"
 )
 
 // keyscanTimeout is ssh-keyscan's per-connection timeout in seconds; the VM

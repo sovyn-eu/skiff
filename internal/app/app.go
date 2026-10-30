@@ -10,11 +10,11 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend"
-	"github.com/itlabs-gmbh/skiff/internal/backend/container"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/host"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/backend"
+	"github.com/sovyn-eu/skiff/internal/backend/container"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/host"
+	"github.com/sovyn-eu/skiff/internal/runner"
 )
 
 // App bundles the collaborators every command needs.

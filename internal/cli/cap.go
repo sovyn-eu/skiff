@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/itlabs-gmbh/skiff/internal/app"
+	"github.com/sovyn-eu/skiff/internal/app"
 )
 
 func newCapCmd(get func() *app.App) *cobra.Command {

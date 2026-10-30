@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/itlabs-gmbh/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/config"
 )
 
 // Spawner starts the forward relay for a state directory as a process that

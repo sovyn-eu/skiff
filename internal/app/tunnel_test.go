@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/broker"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/broker"
+	"github.com/sovyn-eu/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // tunnelScript scripts the VM states `ls` reports and what each `ssh -N`

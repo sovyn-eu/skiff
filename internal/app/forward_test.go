@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/itlabs-gmbh/skiff/internal/backend/backendtest"
-	"github.com/itlabs-gmbh/skiff/internal/runner"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/backend/backendtest"
+	"github.com/sovyn-eu/skiff/internal/runner"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // forwardApp has a running VM "web" without forwards.

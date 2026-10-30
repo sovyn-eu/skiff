@@ -10,7 +10,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 // RemoveGuard makes Remove a compare-and-swap: the VM is only removed if its

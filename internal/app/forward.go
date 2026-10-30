@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 const (

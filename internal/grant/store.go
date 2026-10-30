@@ -12,7 +12,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/cap"
 )
 
 // Store keeps per-VM grants and placeholder tokens on the Mac, where the

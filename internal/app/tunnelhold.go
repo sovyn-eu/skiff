@@ -8,9 +8,9 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/broker"
-	"github.com/itlabs-gmbh/skiff/internal/config"
-	"github.com/itlabs-gmbh/skiff/internal/vm"
+	"github.com/sovyn-eu/skiff/internal/broker"
+	"github.com/sovyn-eu/skiff/internal/config"
+	"github.com/sovyn-eu/skiff/internal/vm"
 )
 
 const (

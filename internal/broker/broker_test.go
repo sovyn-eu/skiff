@@ -18,8 +18,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/itlabs-gmbh/skiff/internal/cap"
-	"github.com/itlabs-gmbh/skiff/internal/grant"
+	"github.com/sovyn-eu/skiff/internal/cap"
+	"github.com/sovyn-eu/skiff/internal/grant"
 )
 
 // TestMain doubles as a tiny stdio MCP server when SKIFF_TEST_MCP is set,
