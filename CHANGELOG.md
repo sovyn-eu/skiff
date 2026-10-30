@@ -7,6 +7,13 @@ and the project uses [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [0.1.1] - 2026-10-30
+
+The first release under `github.com/sovyn-eu/skiff`. Reinstall from the new
+path; `go install github.com/itlabs-gmbh/skiff/...` stays on 0.1.0.
+
 ### Changed
 
 - **skiff moved to `sovyn-eu/skiff`.** The repository, the module path
@@ -210,6 +217,7 @@ First public release.
 - The guest CRNG is reseeded from the Lima VM's `/dev/urandom` after every
   snapshot restore so clones diverge immediately.
 
-[Unreleased]: https://github.com/sovyn-eu/skiff/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/sovyn-eu/skiff/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/sovyn-eu/skiff/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/sovyn-eu/skiff/compare/v0.0.1...v0.1.0
 [0.0.1]: https://github.com/sovyn-eu/skiff/releases/tag/v0.0.1
